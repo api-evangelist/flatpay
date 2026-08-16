@@ -1,0 +1,41 @@
+generated: '2026-08-16'
+method: searched
+source: https://status.flatpay.com/
+note: >-
+  Flatpay publishes no API versioning policy, no deprecation policy and no SLA,
+  because it publishes no public API. What it does operate is a public platform
+  status page with machine-readable RSS feeds.
+versioning:
+  scheme: null
+  current: null
+  docs: null
+  note: No public API and no published versioning policy.
+deprecation:
+  policy_url: null
+  sunset_header: null
+  note: No published deprecation or Sunset/Deprecation (RFC 8594) policy.
+sla:
+  url: null
+  uptime_target: null
+  note: No published SLA or uptime commitment on the public site.
+status_page: https://status.flatpay.com/
+status_page_platform: incident.io
+status_page_feeds:
+- url: https://status.flatpay.com/history.rss
+  format: rss
+  status: 200
+- url: https://status.flatpay.com/feed.rss
+  format: rss
+  status: 200
+status_page_components:
+  merchant_platform: 5
+  payment_processing: 2
+  product: 3
+  connectivity: 1
+  country: 7
+deprecated_operations: []
+evidence:
+- url: https://status.flatpay.com/
+  status: 200
+- url: https://status.flatpay.com/history.rss
+  status: 200

@@ -1,0 +1,96 @@
+generated: '2026-08-16'
+method: searched
+source: https://www.flatpay.com/pricing
+note: >-
+  Flatpay prices merchant card acceptance, not API access. There is no developer
+  plan, no API metering and no usage tier — the published plans are hardware +
+  transaction-rate packages. All figures below are quoted verbatim from the
+  English (default locale) pricing page; rates and hardware prices differ by
+  country locale.
+currency: EUR
+billing_period: per-transaction
+plan_count: 4
+plans:
+- name: Payment Terminal
+  price: 0
+  currency: EUR
+  price_note: 0 EUR hardware cost for merchants below 200,000 EUR annual turnover
+  billing_period: per-transaction
+  transaction_rate: 0.99%
+  transaction_rate_note: flat rate on all cards
+  turnover_band: below 200,000 EUR annual turnover
+  included:
+  - PAX A920 Pro terminal
+  - Merchant portal
+  - Daily payouts
+  - 24/7 support
+  overage: null
+- name: Payment Terminal (above 200,000 EUR turnover)
+  price: null
+  currency: EUR
+  price_note: Custom pricing — contact sales
+  billing_period: per-transaction
+  transaction_rate: null
+  turnover_band: above 200,000 EUR annual turnover
+  included:
+  - PAX A920 Pro terminal
+  - Merchant portal
+  - Daily payouts
+  - 24/7 support
+  overage: null
+- name: Basic POS
+  price: 1495
+  currency: EUR
+  price_note: 1,495 EUR upfront hardware for merchants below 200,000 EUR annual turnover; 0 EUR above that band
+  billing_period: per-transaction
+  transaction_rate: 1.49%
+  transaction_rate_note: 1.49% below 200,000 EUR annual turnover; 0.99% above it
+  turnover_band: both bands published
+  included:
+  - Tablet
+  - Card terminal
+  - Cash drawer
+  - Receipt printer
+  - POS software
+  - Daily payouts
+  - 24/7 support
+  overage: null
+- name: Premium POS
+  price: 2495
+  currency: EUR
+  price_note: 2,495 EUR upfront hardware for merchants below 200,000 EUR annual turnover; 0 EUR above that band
+  billing_period: per-transaction
+  transaction_rate: 1.49%
+  transaction_rate_note: 1.49% below 200,000 EUR annual turnover; 0.99% above it
+  turnover_band: both bands published
+  included:
+  - CPOS X5 terminal
+  - PAX A920 Pro terminal
+  - Cash drawer
+  - Fishscale receipt printer
+  - Enhanced POS software
+  - Daily payouts
+  - 24/7 support
+  overage: null
+online_payments_rates:
+- item: Danish and EU cards
+  rate: 0.99%
+- item: International cards
+  rate: 1.99%
+- item: Corporate cards
+  rate: 1.99%
+- item: MobilePay per transaction
+  rate: 0.13 EUR
+- item: MobilePay monthly
+  rate: 6.60 EUR
+- item: Monthly subscription
+  rate: 0 EUR
+- item: Fixed transaction fee
+  rate: 0 EUR
+- item: 3D Secure
+  rate: 0 EUR
+evidence:
+- url: https://www.flatpay.com/pricing
+  status: 200
+- url: https://www.flatpay.com/products/online-payments
+  status: 200

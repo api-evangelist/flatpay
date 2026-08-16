@@ -1,0 +1,43 @@
+generated: '2026-08-16'
+method: searched
+source: npm, PyPI, GitHub org search, help.flatpay.com integration articles
+package_count: 0
+official_package_count: 0
+packages: []
+note: >-
+  No first-party Flatpay client library exists in any public registry. npm
+  `flatpay`, `@flatpay/sdk` and `flatpay-sdk` all return 404, as does PyPI
+  `flatpay`. Flatpay's public GitHub presence (github.com/FLATPAY-DK) holds two
+  repositories, both FORKS of unrelated third-party libraries
+  (socket.io-client-java, engine.io-client-java) — neither is a Flatpay client
+  library. Six further Flatpay-named GitHub orgs (flatpay-payment-tech,
+  Flatpay-BI, Flatpay-AI, Flatpay-Marketing, Flatpayweb, Flatpay-Miscellaneous)
+  expose zero public repositories. Webshop integration is delivered as
+  "Frisbii+ Pay" plugins for WooCommerce, Shopify, Magento, PrestaShop,
+  Shopware, OpenCart, Drupal, Dynamicweb, Ucommerce, VirtueMart and Ideal Shop —
+  those plugins are published by Frisbii (Billwerk+), a different company, and
+  are therefore not recorded as Flatpay packages.
+registries_checked:
+- registry: npm
+  query: flatpay
+  status: 404
+- registry: npm
+  query: '@flatpay/sdk'
+  status: 404
+- registry: npm
+  query: flatpay-sdk
+  status: 404
+- registry: pypi
+  query: flatpay
+  status: 404
+- registry: github
+  query: orgs/flatpay
+  status: 404
+evidence:
+- url: https://registry.npmjs.org/flatpay
+  status: 404
+- url: https://pypi.org/pypi/flatpay/json
+  status: 404
+- url: https://api.github.com/orgs/FLATPAY-DK/repos
+  status: 200
+  note: 2 repositories, both forks of third-party libraries

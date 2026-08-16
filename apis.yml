@@ -1,7 +1,16 @@
 aid: flatpay
 name: Flatpay
-description: 'Flatpay is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Flatpay is a Copenhagen-headquartered payments company founded in 2022
+  that sells card acceptance to small and medium-sized European merchants on a single
+  flat per-transaction rate with no monthly subscription. Its product line is a PAX
+  card terminal, an all-in-one point-of-sale system, an online payment solution for
+  webshops built on the Frisbii (Billwerk+) platform, and Flatpay Capital merchant
+  financing. The company operates in Denmark, Finland, Germany, Italy, France, the
+  Netherlands and the United Kingdom, serves roughly 70,000 merchants, and reached
+  unicorn valuation in 2025. Flatpay publishes no public developer portal, API reference
+  or machine-readable specification: webshop integration is delivered through Frisbii+
+  Pay plugins and a merchant-issued API key for the Frisbii gateway, which is operated
+  by a different company.'
 url: https://raw.githubusercontent.com/api-evangelist/flatpay/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -10,8 +19,18 @@ x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-16'
 modified: '2026-08-16'
+image: https://cdn.prod.website-files.com/675c2b1d9cefa24db1fdcafc/681a7a4079e0bf9e26fad636_en-open-graph-main-all-products.jpg
 tags:
 - Company
+- Payments
+- Point of Sale
+- Card Terminals
+- Merchant Acquiring
+- Fintech
+- Online Payments
+- Denmark
+- Europe
+- Small Business
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +39,71 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.flatpay.com/
+- type: Support
+  url: https://www.flatpay.com/support
+- type: HelpCenter
+  url: https://help.flatpay.com/en/support/solutions
+- type: Blog
+  url: https://www.flatpay.com/blog
+- type: Pricing
+  url: https://www.flatpay.com/pricing
+- type: Login
+  url: https://portal.flatpay.com/
+- type: TermsOfService
+  url: https://www.flatpay.com/legal/terms-conditions
+- type: PrivacyPolicy
+  url: https://www.flatpay.com/legal/privacy-policy
+- type: GitHubOrganization
+  url: https://github.com/FLATPAY-DK
+- type: StatusPage
+  url: https://status.flatpay.com/
+- type: Security
+  url: https://flatpay.com/responsible-disclosure
+- type: SecurityTxt
+  url: well-known/flatpay-security.txt
+- type: WellKnown
+  url: well-known/flatpay-well-known.yml
+- type: VulnerabilityDisclosure
+  url: security/flatpay-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/flatpay-domain-security.yml
+- type: LLMsTxt
+  url: llms/flatpay-llms.txt
+- type: Lifecycle
+  url: lifecycle/flatpay-lifecycle.yml
+- type: Plans
+  url: plans/flatpay-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/flatpay-rate-limits.yml
+- type: Packages
+  url: packages/flatpay-packages.yml
+x-enrichment:
+  date: '2026-08-16'
+  status: minimal
+  artifacts_added: 9
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Flatpay ships no developer program of its own — api.flatpay.com and
+    developer.flatpay.com do not resolve, the 1,554-URL sitemap contains no
+    /developers, /docs or /api path, and the help center's webshop-integration
+    articles hand merchants an emailed API key and link out to Frisbii's
+    billwerk.plus plugin pages, because Flatpay Online runs on the Frisbii
+    (Billwerk+) platform operated by a different company.
+  evidence:
+  - url: https://api.flatpay.com/
+    status: 0
+  - url: https://www.flatpay.com/openapi.json
+    status: 404
+  - url: https://www.flatpay.com/sitemap.xml
+    status: 200
+  - url: https://help.flatpay.com/en/support/solutions
+    status: 200
+  - url: https://www.flatpay.com/.well-known/security.txt
+    status: 200
+  - url: https://www.flatpay.com/llms.txt
+    status: 200
+  checked: '2026-08-16'

@@ -1,0 +1,33 @@
+# Flatpay – Payment solutions for merchants
+> A transparent, flat‑fee payment provider serving merchants across Denmark, Finland, Germany, Italy and France.
+
+## About Flatpay
+- [Our story](https://www.flatpay.com/about): Founded in 2022 in Copenhagen by digital‑payment entrepreneurs. Flatpay offers simple, transparent and affordable payment solutions for small and medium‑sized merchants:contentReference[oaicite:0]{index=0} and has expanded across several European countries:contentReference[oaicite:1]{index=1}. 
+- [Values](https://www.flatpay.com/about): Emphasises putting merchants first, providing human service and maintaining full transparency:contentReference[oaicite:2]{index=2}. The company's goal is to empower merchants with payment solutions, hardware, software and ongoing support:contentReference[oaicite:3]{index=3}.
+- [Mission](https://www.flatpay.com/why-flatpay): Aims to transform everyday payment experiences by eliminating hidden fees and outdated hardware:contentReference[oaicite:4]{index=4}.
+
+## Products
+
+### Payment Terminal
+- [Terminal](https://www.flatpay.com/products/terminal): Accepts major cards including contactless payments:contentReference[oaicite:5]{index=5}. Automatically uploads transactions and Z‑reports to bookkeeping systems to save time:contentReference[oaicite:6]{index=6}. Pricing for merchants processing under €200,000 annually: no setup fee and a 0.99% per‑transaction rate:contentReference[oaicite:7]{index=7}; customised pricing is offered for higher turnovers:contentReference[oaicite:8]{index=8}.
+
+### Point of Sale (POS)
+- [POS system](https://www.flatpay.com/products/pos-system): An all‑in‑one solution that speeds up checkout, tracks sales and manages inventory in a single system:contentReference[oaicite:9]{index=9}. Offers low upfront costs, no monthly fees and no hidden charges:contentReference[oaicite:10]{index=10}. Includes durable hardware, reliable software and 24/7 support:contentReference[oaicite:11]{index=11}. Features like kitchen printers and table‑view management help restaurants handle orders efficiently:contentReference[oaicite:12]{index=12}.
+
+### Online Payments
+- [Online payments](https://www.flatpay.com/products/online-payments): Easy integration into webshops:contentReference[oaicite:13]{index=13}. Uses secure encryption and provides 24/7 customer support:contentReference[oaicite:14]{index=14}. No subscription or fixed transaction fee; Danish/EU cards are charged 0.99% and non‑EU cards 1.99%:contentReference[oaicite:15]{index=15}. Supports numerous payment methods and integrates with platforms like Shopify, Prestashop and WooCommerce:contentReference[oaicite:16]{index=16}.
+
+## Services
+- [Support](https://www.flatpay.com/support): 24/7 customer assistance with phone (+45 88773939) and email options:contentReference[oaicite:17]{index=17}.
+- [Capital](https://www.flatpay.com/services/capital): Financing options that help businesses grow (if available).
+
+## Insights
+- [Merchant stories](https://www.flatpay.com/customer-stories): Case studies demonstrating how businesses benefit from Flatpay's solutions:contentReference[oaicite:18]{index=18}.
+
+## Legal & Policies
+- [Terms and conditions](https://www.flatpay.com/terms): Details on the legal framework for using Flatpay's services.
+- [Privacy policy](https://www.flatpay.com/privacy-policy): Explains data usage and protection practices.
+- [Cookie policy](https://www.flatpay.com/cookie-policy): Outlines cookie usage on the site.
+
+## Contact
+- [Contact](https://www.flatpay.com/contact): Provides telephone and email contacts for sales and support.

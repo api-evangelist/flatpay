@@ -1,0 +1,8 @@
+Contact: mailto:security@flatpay.com
+Expires: 2026-12-31T11:00:00.000Z
+Preferred-Languages: en
+Policy: https://flatpay.com/responsible-disclosure
+
+## Bug Bounty
+## -----------
+## Flatpay does not have a bug bounty program and will therefore not offer bug rewards.

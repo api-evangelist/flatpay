@@ -1,0 +1,112 @@
+generated: '2026-08-16'
+method: probed
+source: live GET of /.well-known/* on every Flatpay host named in apis.yml
+note: >-
+  Flatpay serves a real RFC 9116 security.txt from its marketing host. Every other
+  well-known path 404s. portal.flatpay.com and checkout.flatpay.com are single-page
+  applications whose catch-all route answers HTTP 200 with the app HTML shell for
+  ANY path, including /.well-known/agent-card.json — those 200s are recorded as
+  misses, not documents, because no document is served.
+hosts:
+- host: https://www.flatpay.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    content_type: text/plain
+    file: flatpay-security.txt
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://help.flatpay.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://status.flatpay.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://portal.flatpay.com
+  spa_catch_all: true
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    content_type: text/html
+    document: false
+    note: SPA shell, not a document — treated as a miss
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    content_type: text/html
+    document: false
+    note: SPA shell, not a document — treated as a miss
+  - path: /.well-known/agent-card.json
+    status: 200
+    content_type: text/html
+    document: false
+    note: SPA shell, not a document — treated as a miss
+- host: https://checkout.flatpay.com
+  spa_catch_all: true
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    content_type: text/html
+    document: false
+    note: SPA shell, not a document — treated as a miss
+  - path: /.well-known/agent-card.json
+    status: 200
+    content_type: text/html
+    document: false
+    note: SPA shell, not a document — treated as a miss
+  - path: /.well-known/agent.json
+    status: 200
+    content_type: text/html
+    document: false
+    note: SPA shell, not a document — treated as a miss
+- host: https://dashboard.flatpay.com
+  note: >-
+    Flatpay's internal employee Keycloak ("Sign in to Internal", realm `internal`,
+    SAML broker to Microsoft). Not a merchant or developer auth surface; the realm
+    OIDC discovery document is not exposed publicly.
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /realms/internal/.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+summary:
+  documents_found: 1
+  agent_card_found: false
+  oidc_discovery_found: false

@@ -1,0 +1,22 @@
+generated: '2026-08-16'
+method: searched
+source: https://help.flatpay.com/en/support/solutions
+limit_count: 0
+note: >-
+  No published rate limits. Flatpay has no public developer portal, API reference
+  or machine-readable specification, so there is no documented limit, window,
+  burst, exhaustion status code, or RateLimit-* / X-RateLimit-* / Retry-After
+  response header to record. Merchant webshop traffic runs against the Frisbii
+  (Billwerk+) gateway, which is operated by a different company; any limits that
+  apply there are Frisbii's to publish, not Flatpay's, and are not recorded on
+  this profile.
+limits: []
+headers: []
+evidence:
+- url: https://help.flatpay.com/en/support/solutions
+  status: 200
+- url: https://www.flatpay.com/products/online-payments
+  status: 200
+- url: https://api.flatpay.com/
+  status: 0
+  note: does not resolve (NXDOMAIN)
