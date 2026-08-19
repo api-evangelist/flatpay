@@ -16,7 +16,7 @@ x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
 x-tier-reason: harvest
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-08-16'
 modified: '2026-08-16'
 image: https://cdn.prod.website-files.com/675c2b1d9cefa24db1fdcafc/681a7a4079e0bf9e26fad636_en-open-graph-main-all-products.jpg
