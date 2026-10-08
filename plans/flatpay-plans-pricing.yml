@@ -94,3 +94,36 @@ evidence:
   status: 200
 - url: https://www.flatpay.com/products/online-payments
   status: 200
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  - negotiated
+  - subscription
+  units: []
+  plans:
+  - name: Payment Terminal
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods: []
+  - name: Payment Terminal (above 200,000 EUR turnover)
+    access: other
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Basic POS
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Premium POS
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
